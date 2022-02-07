@@ -19,6 +19,7 @@ export default function syncTrees(/** @type {Transaction} */ transaction) {
     }
   }
 
+
   // Do a global replace of the element, unable to do this at a lower level.
   // Ignore this for document fragments, they don't appear in the DOM and we
   // treat them as transparent containers.

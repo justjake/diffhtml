@@ -106,7 +106,7 @@ export default function renderComponent(vTree, transaction) {
        * @param {any} state
        */
       render(props, state) {
-        return createTree(RawComponent(props, state));
+        return createTree(vTree.rawNodeName(props, state));
       }
 
       /** @type {VTree | null} */
